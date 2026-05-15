@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pinewood Academy — Beyond Imagination · Crafted for Tomorrow</title>
+  <meta name="description" content="Pinewood Academy offers bespoke academic mentorship for ambitious high schoolers: 1-on-1 faculty research, small seminars, custom subject tutoring (Engineering, Physics, Mathematics), and international competitions (John Locke, TCR, Rethink Essay)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="en">
+
+<!-- shared decorative SVG library -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="dia" viewBox="0 0 24 24"><path d="M12 1 L23 12 L12 23 L1 12 Z"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l2.4 6.5L21 10l-5.3 4.2L17.4 21 12 17 6.6 21l1.7-6.8L3 10l6.6-1.5z"/></symbol>
+    <symbol id="ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke-width="3"/></symbol>
+    <symbol id="squig" viewBox="0 0 60 14"><path d="M2 7 Q 10 0, 17 7 T 32 7 T 47 7 T 60 7" stroke-width="2.4" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 1 L4 14 H11 L10 23 L20 9 H13 Z"/></symbol>
+    <symbol id="leaf" viewBox="0 0 24 24"><path d="M3 21 C 3 9, 12 3, 21 3 C 21 12, 15 21, 3 21 Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============== NAV ============== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="Pinewood Academy">
+      <img src="assets/logo-original.png" alt="Pinewood Academy" />
+    </a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#process">Journey</a>
+      <a href="#outcomes">Outcomes</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#contact" class="nav__cta">Contact →</a>
+      <div class="lang">
+        <a href="index.html" class="lang__alt">中</a>
+        <span class="lang__cur">EN</span>
+      </div>
+    </nav>
+    <button class="nav__burger" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="mobileMenu" hidden>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#process">Journey</a>
+    <a href="#outcomes">Outcomes</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+    <a href="index.html" class="lang-m">中文版 →</a>
+  </nav>
+</header>
+
+<a id="top"></a>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <svg class="sc sc-1" aria-hidden="true"><use href="#dia"/></svg>
+  <svg class="sc sc-2" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="sc sc-3" aria-hidden="true"><use href="#ring"/></svg>
+  <svg class="sc sc-4" aria-hidden="true"><use href="#dia"/></svg>
+  <svg class="sc sc-5" aria-hidden="true"><use href="#leaf"/></svg>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">Pinewood Academy · 松灵学院</p>
+      <h1 class="hero__title">
+        Explore the unknown,<br/>
+        <span class="hero__highlight">light the future.</span>
+        <svg class="hl-squig" aria-hidden="true"><use href="#squig"/></svg>
+      </h1>
+      <p class="hero__sub">
+        Bespoke academic mentorship and research pathways for ambitious high schoolers —<br/>
+        guided by world-class faculty and industry leaders who take your curiosity seriously.
+      </p>
+      <div class="hero__cta">
+        <a href="#programs" class="btn btn--primary">Explore Programs</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch →</a>
+      </div>
+      <div class="hero__tag">Beyond Imagination　|　Crafted for Tomorrow</div>
+    </div>
+
+    <div class="hero__media">
+      <div class="hero__diamond">
+        <img src="assets/hero-science.png" alt="Pinewood students exploring a research lab" />
+      </div>
+      <span class="shape shape--blob blob-1" aria-hidden="true"></span>
+      <span class="shape shape--blob blob-2" aria-hidden="true"></span>
+      <span class="shape shape--circle circle-1" aria-hidden="true"></span>
+      <svg class="shape shape--star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.4 6.5L21 10l-5.3 4.2L17.4 21 12 17 6.6 21l1.7-6.8L3 10l6.6-1.5z"/></svg>
+      <svg class="shape shape--bolt" aria-hidden="true"><use href="#bolt"/></svg>
+    </div>
+  </div>
+
+  <svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60 C 240 0, 480 100, 720 60 S 1200 20, 1440 60 L1440 80 L0 80 Z" />
+  </svg>
+</section>
+
+<!-- ============== STATS BAND ============== -->
+<section class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <svg class="stats__deco s-d-1" aria-hidden="true"><use href="#dia"/></svg>
+      <svg class="stats__deco s-d-2" aria-hidden="true"><use href="#star"/></svg>
+
+      <div class="stat">
+        <div class="stat__num">100<span>+</span></div>
+        <div class="stat__lbl">Faculty from Top Schools</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">1000<span>+</span></div>
+        <div class="stat__lbl">Industry Experts</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">30<span>+</span></div>
+        <div class="stat__lbl">Subjects &amp; Competitions</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">6<span>-Stage</span></div>
+        <div class="stat__lbl">End-to-End Mentorship</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section class="about" id="about">
+  <svg class="sc sc-6" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="sc sc-7" aria-hidden="true"><use href="#dia"/></svg>
+  <svg class="sc sc-8" aria-hidden="true"><use href="#squig"/></svg>
+
+  <div class="container about__grid">
+    <div class="about__media">
+      <img src="assets/about-photo.jpg" alt="Pinewood Academy academic environment" class="about__photo" />
+      <span class="shape shape--blob blob-3" aria-hidden="true"></span>
+      <span class="shape shape--ring ring-1" aria-hidden="true"></span>
+    </div>
+    <div class="about__copy">
+      <p class="eyebrow eyebrow--peach">About Pinewood</p>
+      <h2 class="h2">We believe every student deserves a <span class="u-mark">one-of-a-kind</span> future.</h2>
+      <p class="lead">
+        Pinewood Academy delivers personalized academic support and high-end project consulting.
+        We design a complete pathway — from coursework to research to competition — around each
+        student's interests, strengths, and university aspirations.
+      </p>
+      <p>
+        In a traditional system, students rarely encounter rigorous research, real literature work,
+        or world-class mentors until graduate school. At Pinewood, high schoolers step directly
+        into the studios of leading scientists and industry voices — exploring the complexity and
+        beauty of the world through research, curiosity, and creation.
+      </p>
+      <ul class="about__bullets">
+        <li><strong>Personalized</strong> — 1-on-1 advisory interviews map your interests to a target-school profile.</li>
+        <li><strong>High-caliber</strong> — Faculty, PhD candidates, and industry experts mentor the entire research lifecycle.</li>
+        <li><strong>Human</strong> — Dedicated program managers walk alongside every student through pace and progress.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROGRAMS ============== -->
+<section class="programs" id="programs">
+  <svg class="sc sc-9" aria-hidden="true"><use href="#dia"/></svg>
+  <svg class="sc sc-10" aria-hidden="true"><use href="#bolt"/></svg>
+  <svg class="sc sc-11" aria-hidden="true"><use href="#ring"/></svg>
+
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Program Lineup</p>
+      <h2 class="h2">A <span class="u-mark">tailored path</span> for every kind of curiosity.</h2>
+      <p class="section-head__sub">
+        From faculty-led research to small seminars, subject tutoring, and international competitions —
+        Pinewood prepares the road you want to take.
+      </p>
+    </header>
+
+    <div class="programs__grid">
+      <article class="card card--teal">
+        <div class="card__media">
+          <img src="assets/p-1v1.jpg" alt="One-on-one faculty mentorship" loading="lazy"/>
+          <div class="card__chip">Mentor 1v1</div>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">01 / Faculty 1-on-1</span>
+          <h3 class="card__title">1-on-1 Faculty Research</h3>
+          <p>
+            Work directly with leading professors, one student at a time. Define your research question,
+            train rigorously in methodology, and produce work that travels with you to college and beyond.
+          </p>
+          <ul class="card__points">
+            <li>Topic selection · Literature review</li>
+            <li>Independent research · Data analysis</li>
+            <li>Paper writing · Recommendation support</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card--cream">
+        <div class="card__media">
+          <img src="assets/p-class.jpg" alt="Small faculty-led seminar" loading="lazy"/>
+          <div class="card__chip">Small Class</div>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">02 / Small Seminar</span>
+          <h3 class="card__title">Faculty Small Seminars</h3>
+          <p>
+            Intimate 3–6 person seminars taught by top faculty. Wide-angle, cross-disciplinary discussion —
+            from STEM to humanities, business, and the arts.
+          </p>
+          <ul class="card__points">
+            <li>3–6 students per cohort</li>
+            <li>Peer-driven inquiry · Socratic style</li>
+            <li>Translates directly into application narratives</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card--peach">
+        <div class="card__media">
+          <img src="assets/p-tutor.jpg" alt="Custom subject tutoring" loading="lazy"/>
+          <div class="card__chip">Custom Tutor</div>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">03 / Custom Tutor</span>
+          <h3 class="card__title">Custom Subject Tutoring</h3>
+          <p>
+            Targeted 1-on-1 acceleration for your current bottleneck, target score, or admissions goal.
+            From core STEM to niche competition subjects — flexible scheduling, your pace.
+          </p>
+          <ul class="card__points">
+            <li>Engineering</li>
+            <li>Physics</li>
+            <li>Mathematics &amp; more</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card--mint">
+        <div class="card__media">
+          <img src="assets/p-essay.jpg" alt="International essay competitions" loading="lazy"/>
+          <div class="card__chip">Competitions</div>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">04 / Competitions</span>
+          <h3 class="card__title">International Competitions</h3>
+          <p>
+            End-to-end support from prompt analysis to final submission — writing, methodology, sourcing,
+            polish. We walk every step with you.
+          </p>
+          <ul class="card__points">
+            <li>John Locke Essay Competition</li>
+            <li>The Concord Review (TCR)</li>
+            <li>Rethink Essay Competition &amp; more</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROCESS ============== -->
+<section class="process" id="process">
+  <svg class="sc sc-12" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="sc sc-13" aria-hidden="true"><use href="#leaf"/></svg>
+  <svg class="sc sc-14" aria-hidden="true"><use href="#dia"/></svg>
+
+  <div class="container">
+    <header class="section-head section-head--center">
+      <p class="eyebrow eyebrow--peach">Research Journey</p>
+      <h2 class="h2">Six chapters that turn an idea into <span class="u-mark">a finished study</span>.</h2>
+      <p class="section-head__sub">
+        Each stage has a clear goal and execution checklist. Faculty and program managers walk in
+        parallel — no research left half-done.
+      </p>
+    </header>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step__num">01</span>
+        <h4>Topic &amp; Foundation</h4>
+        <p>Translate interest and university profile into a workable research question — with a clear hypothesis and plan.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">02</span>
+        <h4>Literature Review</h4>
+        <p>Systematic search of high-quality sources. Build your own knowledge map and locate where your work fits in.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">03</span>
+        <h4>Methodology &amp; Data</h4>
+        <p>Experiments, surveys, fieldwork, or frontier data — pick the method that fits your discipline and start doing the work.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">04</span>
+        <h4>Analysis &amp; Findings</h4>
+        <p>Interpret results under faculty guidance. Confirm or challenge your hypothesis and push further into the question.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">05</span>
+        <h4>Discussion &amp; Conclusion</h4>
+        <p>Position your study within its field, distill contributions and limits, and shape the core narrative of your paper.</p>
+      </li>
+      <li class="step">
+        <span class="step__num">06</span>
+        <h4>Final Paper &amp; References</h4>
+        <p>Polish for submission and align faculty letters of recommendation — leverage that travels with you to admissions.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============== OUTCOMES (6 cards 3x2) ============== -->
+<section class="outcomes" id="outcomes">
+  <svg class="sc sc-15" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="sc sc-16" aria-hidden="true"><use href="#dia"/></svg>
+
+  <div class="container outcomes__grid">
+    <div class="outcomes__intro">
+      <p class="eyebrow">Project Outcomes</p>
+      <h2 class="h2">Not just another paper.<br/>A new <span class="u-mark-light">way of seeing</span> the world.</h2>
+      <p>
+        Pinewood doesn't end with a certificate. It ends with a measurable lift in how you think,
+        write, and look ahead — academically and professionally.
+      </p>
+    </div>
+
+    <div class="outcomes__cards">
+      <div class="oc"><h4>Interdisciplinary Mindset</h4><p>Synthesize science, humanities, art, and social questions through multi-angle inquiry.</p></div>
+      <div class="oc"><h4>Academic Output</h4><p>A real paper, research plan, or business case study — a portfolio that proves the work.</p></div>
+      <div class="oc"><h4>Real-World Skills</h4><p>Hands-on research workflow that transfers to school, internship, and career.</p></div>
+      <div class="oc"><h4>Faculty References</h4><p>Letters authored by faculty, PhDs, and industry experts — high-quality endorsements for admissions.</p></div>
+      <div class="oc"><h4>Career Roadmap</h4><p>Deep conversations with mentors that surface majors, industries, and pathways early.</p></div>
+      <div class="oc"><h4>Critical Thinking</h4><p>Argue with evidence; think with method. Build judgment that holds up under scrutiny.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FACULTY ============== -->
+<section class="faculty" id="faculty">
+  <svg class="sc sc-17" aria-hidden="true"><use href="#dia"/></svg>
+  <svg class="sc sc-18" aria-hidden="true"><use href="#leaf"/></svg>
+
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow eyebrow--peach">Faculty</p>
+      <h2 class="h2">Mentors from the <span class="u-mark">names you've been dreaming of</span>.</h2>
+      <p class="section-head__sub">
+        Our mentor network spans the Ivy League, Oxbridge, and world-class research universities —
+        covering humanities, social sciences, STEM, and business.
+      </p>
+    </header>
+
+    <div class="schools-grid">
+      <div class="school" style="--c:#A51C30"><div class="school__crest"><span>Harvard</span></div></div>
+      <div class="school" style="--c:#00356B"><div class="school__crest"><span>Yale</span></div></div>
+      <div class="school" style="--c:#E77500"><div class="school__crest"><span>Princeton</span></div></div>
+      <div class="school" style="--c:#005DAA"><div class="school__crest"><span>Columbia</span></div></div>
+      <div class="school" style="--c:#B31B1B"><div class="school__crest"><span>Cornell</span></div></div>
+      <div class="school" style="--c:#011F5B"><div class="school__crest"><span>Penn</span></div></div>
+      <div class="school" style="--c:#4E3629"><div class="school__crest"><span>Brown</span></div></div>
+      <div class="school" style="--c:#00693E"><div class="school__crest"><span>Dartmouth</span></div></div>
+      <div class="school" style="--c:#222"><div class="school__crest"><span>MIT</span></div></div>
+      <div class="school" style="--c:#8C1515"><div class="school__crest"><span>Stanford</span></div></div>
+      <div class="school" style="--c:#800000"><div class="school__crest"><span>Chicago</span></div></div>
+      <div class="school" style="--c:#57068C"><div class="school__crest"><span>NYU</span></div></div>
+      <div class="school" style="--c:#002D72"><div class="school__crest"><span>Hopkins</span></div></div>
+      <div class="school" style="--c:#002147"><div class="school__crest"><span>Oxford</span></div></div>
+      <div class="school" style="--c:#003E74"><div class="school__crest"><span>Cambridge</span></div></div>
+      <div class="school" style="--c:#E6007E"><div class="school__crest"><span>LSE</span></div></div>
+    </div>
+
+    <div class="faculty__strip">
+      <div class="fchip"><b>Cornell University</b><span>International Development · Sociology</span></div>
+      <div class="fchip"><b>Univ. of Pennsylvania</b><span>History · East Asian Studies</span></div>
+      <div class="fchip"><b>Univ. of Pennsylvania</b><span>Political Science · Sociology</span></div>
+      <div class="fchip"><b>New York University</b><span>Business · Finance</span></div>
+      <div class="fchip"><b>Univ. of Pennsylvania</b><span>Law</span></div>
+      <div class="fchip"><b>Univ. of Chicago</b><span>History · Religious Studies</span></div>
+      <div class="fchip"><b>Oxford University</b><span>Linguistics</span></div>
+      <div class="fchip"><b>Johns Hopkins Univ.</b><span>Computer Science · EE</span></div>
+      <div class="fchip"><b>Columbia University</b><span>Biology</span></div>
+      <div class="fchip"><b>Duke University</b><span>Computer Science · EE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section class="contact" id="contact">
+  <svg class="sc sc-19" aria-hidden="true"><use href="#star"/></svg>
+  <svg class="sc sc-20" aria-hidden="true"><use href="#dia"/></svg>
+  <svg class="sc sc-21" aria-hidden="true"><use href="#ring"/></svg>
+
+  <div class="container">
+    <header class="section-head section-head--center">
+      <p class="eyebrow">Contact</p>
+      <h2 class="h2">The next Pinewood student?<br/><span class="u-mark">You.</span></h2>
+      <p class="section-head__sub">
+        Send us your interests, goals, and schedule. A Pinewood advisor replies within 24 hours
+        by email or WeChat.
+      </p>
+    </header>
+
+    <div class="contact__layout">
+      <div class="contact__cards">
+        <a class="cc cc--email" href="mailto:joycelyn@pinewood.top">
+          <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
+            <rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M3 7 L12 14 L21 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span class="cc__lbl">Email</span>
+          <span class="cc__val">joycelyn@pinewood.top</span>
+          <span class="cc__cta">Write to us →</span>
+        </a>
+
+        <div class="cc cc--wechat">
+          <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
+            <path d="M9 3a6 6 0 1 0 4 11l3 1-1-3a6 6 0 0 0-6-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="7" cy="9" r="1" fill="currentColor"/><circle cx="11" cy="9" r="1" fill="currentColor"/>
+            <path d="M14 11a5 5 0 1 1 5 8l-2 1 .5-2.5A5 5 0 0 1 14 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span class="cc__lbl">WeChat</span>
+          <span class="cc__val">PineWood0502</span>
+          <span class="cc__cta">→ Scan the QR to add</span>
+        </div>
+
+        <div class="cc cc--hours">
+          <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 7 V12 L16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="cc__lbl">Office Hours</span>
+          <span class="cc__val">Mon – Sun<br/>10:00 – 22:00 (UTC+8)</span>
+          <span class="cc__cta">24-hour reply window</span>
+        </div>
+      </div>
+
+      <aside class="qr">
+        <div class="qr__name">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 3a6 6 0 1 0 4 11l3 1-1-3a6 6 0 0 0-6-9z" fill="#E89B6F"/>
+          </svg>
+          <span>Joycelyn</span>
+        </div>
+        <div class="qr__img">
+          <img src="assets/wechat-qr.png" alt="Pinewood Academy WeChat QR" onerror="this.style.display='none'; this.parentNode.classList.add('qr__placeholder')" />
+        </div>
+        <p class="qr__hint">Scan to add me on WeChat.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="assets/logo-original.png" alt="Pinewood Academy logo" />
+      <p class="footer__tag">Beyond Imagination　·　Crafted for Tomorrow</p>
+      <p class="footer__sm">Bespoke academic mentorship for ambitious high schoolers.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Programs</h5>
+      <a href="#programs">Faculty 1-on-1</a>
+      <a href="#programs">Small Seminars</a>
+      <a href="#programs">Custom Tutoring</a>
+      <a href="#programs">Competitions</a>
+    </div>
+    <div class="footer__col">
+      <h5>Pinewood</h5>
+      <a href="#about">About</a>
+      <a href="#process">Journey</a>
+      <a href="#outcomes">Outcomes</a>
+      <a href="#faculty">Faculty</a>
+    </div>
+    <div class="footer__col">
+      <h5>Contact</h5>
+      <a href="mailto:joycelyn@pinewood.top">joycelyn@pinewood.top</a>
+      <a href="#contact">WeChat: PineWood0502</a>
+      <a href="index.html">中文版 →</a>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <span>© <span id="yr"></span> Pinewood Academy</span>
+    <span class="footer__bar-r">Explore the unknown, light the future.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

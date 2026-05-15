@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Local preview config (don't push the auto-run launch.json)
+.claude/
+
+# Temp / build
+node_modules/
+dist/
+*.log
