@@ -778,79 +778,72 @@ svg.sc{ width:28px;height:28px}
 }
 .contact__layout{
   display:grid;
-  grid-template-columns: 1fr 320px;
-  gap: 40px;
-  align-items:start;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items:stretch;
   margin: 0 0 48px;
   position:relative; z-index:1;
 }
-.contact__cards{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+
+/* Larger contact card variant */
+.cc--lg{
+  padding: 34px 34px 32px;
+  border-radius: var(--radius-lg);
+  height: 100%;
+}
+.cc__desc{
+  margin: 8px 0 22px;
+  color: var(--ink-700);
+  font-size: .98rem;
+  z-index:1;
 }
 
-/* WeChat QR aside */
-.qr{
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  padding: 22px 22px 26px;
-  box-shadow: var(--shadow-1);
-  text-align:center;
-  position:relative;
-  overflow:hidden;
+/* Embedded QR inside the WeChat card */
+.cc__qr{
+  display:flex;
+  align-items:center;
+  gap: 20px;
+  padding: 18px;
+  margin-top: auto;
+  background: #FBF7EE;
+  border: 1px dashed var(--peach-300);
+  border-radius: 18px;
+  position: relative; z-index:1;
 }
-.qr::before{
-  content:""; position:absolute;
-  inset: -30% -30% auto auto;
-  width: 70%; aspect-ratio:1;
-  border-radius: 50%;
-  background: #FCE4D2;
-  opacity: .5;
-  z-index:0;
-}
-.qr__name{
-  display:flex; align-items:center; justify-content:center; gap:10px;
-  margin-bottom: 14px;
-  position:relative; z-index:1;
-}
-.qr__name svg{ width:26px; height:26px;}
-.qr__name span{
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  color: var(--ink-900);
-  font-weight: 600;
-}
-.qr__img{
-  position:relative; z-index:1;
+.cc__qr-img{
+  flex: 0 0 auto;
+  width: 140px; height: 140px;
   background: #fff;
   border-radius: 12px;
   padding: 6px;
-  display:block;
-  margin: 0 auto 12px;
-  width: 220px; height: 220px;
   overflow:hidden;
 }
-.qr__img img{ width:100%; height:100%; object-fit:contain;}
-.qr__img.qr__placeholder{
+.cc__qr-img img{ width:100%; height:100%; object-fit:contain; }
+.cc__qr-img.cc__qr-placeholder{
   background:
     repeating-linear-gradient(45deg, #E89B6F, #E89B6F 6px, #FBF7EE 6px, #FBF7EE 12px);
   display:flex; align-items:center; justify-content:center;
   text-align:center;
 }
-.qr__img.qr__placeholder::after{
-  content:"扫码加微信\A（请把二维码图放入 assets/wechat-qr.png）";
-  white-space: pre-wrap;
-  font-size:.78rem; color: var(--ink-700);
-  background:#fff; padding: 10px 12px; border-radius: 8px;
-  max-width: 70%;
+.cc__qr-img.cc__qr-placeholder::after{
+  content:"QR";
+  font-family: var(--font-serif);
+  font-weight:700;
+  color:#fff;
+  background: var(--peach-500);
+  padding: 6px 10px;
+  border-radius: 8px;
 }
-.qr__hint{
-  margin: 0;
-  font-size: .9rem;
-  color: var(--ink-500);
-  position:relative; z-index:1;
+.cc__qr-hint{
+  display:flex; flex-direction:column; gap:4px;
+  font-size:.95rem;
+  color: var(--ink-700);
+}
+.cc__qr-hint strong{
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink-900);
 }
 .cc{
   background: #fff;
@@ -1022,9 +1015,11 @@ svg.sc{ width:28px;height:28px}
   .oc--5{ grid-column: span 1}
   .schools-grid{ grid-template-columns: repeat(4, 1fr); }
   .faculty__strip{ grid-template-columns: repeat(2, 1fr) }
-  .contact__layout{ grid-template-columns: 1fr; gap: 28px;}
-  .contact__cards{ grid-template-columns: 1fr; gap: 14px}
-  .qr{ max-width: 340px; margin: 0 auto;}
+  .contact__layout{ grid-template-columns: 1fr; gap: 18px;}
+  .cc--lg{ padding: 26px 22px;}
+  .cc__qr{ flex-direction: column; align-items: flex-start; gap: 14px;}
+  .cc__qr-img{ width: 160px; height: 160px; margin: 0 auto;}
+  .cc__qr-hint{ text-align: center; align-items: center; width:100%;}
   .contact__cta-row{ flex-direction: column; align-items: flex-start; padding: 24px;}
   .schools-grid{ grid-template-columns: repeat(4, 1fr); }
   .lang{ display:none }

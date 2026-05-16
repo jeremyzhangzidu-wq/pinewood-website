@@ -408,51 +408,35 @@
     </header>
 
     <div class="contact__layout">
-      <div class="contact__cards">
-        <a class="cc cc--email" href="mailto:joycelyn@pinewood.top">
-          <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
-            <rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
-            <path d="M3 7 L12 14 L21 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span class="cc__lbl">Email</span>
-          <span class="cc__val">joycelyn@pinewood.top</span>
-          <span class="cc__cta">Write to us →</span>
-        </a>
+      <a class="cc cc--email cc--lg" href="mailto:joycelyn@pinewood.top">
+        <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
+          <rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M3 7 L12 14 L21 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span class="cc__lbl">Email</span>
+        <span class="cc__val">joycelyn@pinewood.top</span>
+        <p class="cc__desc">Tell us your interests, target schools, and schedule. A Pinewood advisor replies within 24 hours by email.</p>
+        <span class="cc__cta">Write to us →</span>
+      </a>
 
-        <div class="cc cc--wechat">
-          <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
-            <path d="M9 3a6 6 0 1 0 4 11l3 1-1-3a6 6 0 0 0-6-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            <circle cx="7" cy="9" r="1" fill="currentColor"/><circle cx="11" cy="9" r="1" fill="currentColor"/>
-            <path d="M14 11a5 5 0 1 1 5 8l-2 1 .5-2.5A5 5 0 0 1 14 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span class="cc__lbl">WeChat</span>
-          <span class="cc__val">PineWood0502</span>
-          <span class="cc__cta">→ Scan the QR to add</span>
-        </div>
-
-        <div class="cc cc--hours">
-          <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
-            <path d="M12 7 V12 L16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <span class="cc__lbl">Office Hours</span>
-          <span class="cc__val">Mon – Sun<br/>10:00 – 22:00 (UTC+8)</span>
-          <span class="cc__cta">24-hour reply window</span>
+      <div class="cc cc--wechat cc--lg">
+        <svg viewBox="0 0 24 24" class="cc__ico" aria-hidden="true">
+          <path d="M9 3a6 6 0 1 0 4 11l3 1-1-3a6 6 0 0 0-6-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="7" cy="9" r="1" fill="currentColor"/><circle cx="11" cy="9" r="1" fill="currentColor"/>
+          <path d="M14 11a5 5 0 1 1 5 8l-2 1 .5-2.5A5 5 0 0 1 14 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span class="cc__lbl">WeChat</span>
+        <span class="cc__val">PineWood0502</span>
+        <div class="cc__qr">
+          <div class="cc__qr-img">
+            <img src="assets/wechat-qr.png" alt="Pinewood Academy WeChat QR" onerror="this.style.display='none'; this.parentNode.classList.add('cc__qr-placeholder')" />
+          </div>
+          <div class="cc__qr-hint">
+            <strong>Joycelyn</strong>
+            <span>Scan to add me on WeChat.</span>
+          </div>
         </div>
       </div>
-
-      <aside class="qr">
-        <div class="qr__name">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M9 3a6 6 0 1 0 4 11l3 1-1-3a6 6 0 0 0-6-9z" fill="#E89B6F"/>
-          </svg>
-          <span>Joycelyn</span>
-        </div>
-        <div class="qr__img">
-          <img src="assets/wechat-qr.png" alt="Pinewood Academy WeChat QR" onerror="this.style.display='none'; this.parentNode.classList.add('qr__placeholder')" />
-        </div>
-        <p class="qr__hint">Scan to add me on WeChat.</p>
-      </aside>
     </div>
   </div>
 </section>
