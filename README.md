@@ -1,6 +1,6 @@
 # Pinewood Academy · 松灵学院
 
-Bespoke academic mentorship for ambitious high schoolers.
+Bespoke academic mentorship for ambitious high schoolers, undergrads, and graduate students.
 Faculty-led research, small seminars, custom subject tutoring, and international essay competitions.
 
 → **探未知之境，启未来之光**
