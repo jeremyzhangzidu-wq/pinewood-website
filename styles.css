@@ -690,56 +690,63 @@ svg.sc{ width:28px;height:28px}
   position:relative;
   overflow:hidden;
 }
-.schools-grid{
+/* === Mentor grid (abstract illustrated avatars, not real photos) === */
+.mentors-grid{
   display:grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 22px 14px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 20px;
   margin: 0 0 48px;
   position:relative; z-index:1;
 }
-.school{
-  position:relative;
-  display:flex; align-items:center; justify-content:center;
+.mentor{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px 18px 20px;
   text-align:center;
-  transition: transform .3s ease;
-}
-.school:hover{ transform: translateY(-4px); }
-
-/* Crest = circle in school's brand color, holding a refined wordmark */
-.school__crest{
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
   position:relative;
-  width: 84px; height: 84px;
+}
+.mentor:hover{
+  transform: translateY(-5px);
+  border-color: var(--teal-500);
+  box-shadow: var(--shadow-1);
+}
+.mentor__ava{
+  width: 92px; height: 92px;
+  margin: 0 auto 14px;
   border-radius: 50%;
-  background: var(--c, var(--teal-700));
-  color:#fff;
   display:grid; place-items:center;
-  box-shadow: 0 8px 18px rgba(0,0,0,.14),
-              inset 0 -4px 0 rgba(0,0,0,.10),
-              inset 0 0 0 3px rgba(255,255,255,.18);
-  transition: box-shadow .3s ease;
+  overflow:hidden;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.06);
 }
-.school__crest::before,
-.school__crest::after{
-  content:""; position:absolute; left:50%;
-  width:24px; height:1.5px; background: rgba(255,255,255,.55);
-  transform: translateX(-50%);
+.mentor__ava svg{ width: 100%; height: 100%; display:block;}
+.mentor__role{
+  display:inline-block;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--teal-700);
+  background: var(--mint-100);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
 }
-.school__crest::before{ top: 16px;}
-.school__crest::after{ bottom: 16px;}
-.school__crest span{
+.mentor__role--peach{ color:#B5612E; background:#FCE4D2;}
+.mentor__role--ink{ color:#fff; background: var(--ink-900);}
+.mentor__school{
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: .92rem;
-  letter-spacing: .02em;
-  line-height: 1;
-  padding: 0 6px;
-  text-align:center;
-  white-space: nowrap;
+  font-size: 1rem;
+  margin: 4px 0 4px;
+  color: var(--ink-900);
+  line-height: 1.25;
 }
-.school:hover .school__crest{
-  box-shadow: 0 14px 26px rgba(0,0,0,.20),
-              inset 0 -4px 0 rgba(0,0,0,.10),
-              inset 0 0 0 3px rgba(255,255,255,.28);
+.mentor__field{
+  font-size: .85rem;
+  color: var(--ink-500);
+  margin: 0;
 }
 
 .faculty__strip{
@@ -1013,7 +1020,7 @@ svg.sc{ width:28px;height:28px}
   .steps{ grid-template-columns: 1fr 1fr; }
   .outcomes__cards{ grid-template-columns: 1fr }
   .oc--5{ grid-column: span 1}
-  .schools-grid{ grid-template-columns: repeat(4, 1fr); }
+  .mentors-grid{ grid-template-columns: repeat(2, 1fr); gap: 16px;}
   .faculty__strip{ grid-template-columns: repeat(2, 1fr) }
   .contact__layout{ grid-template-columns: 1fr; gap: 18px;}
   .cc--lg{ padding: 26px 22px;}
@@ -1021,7 +1028,7 @@ svg.sc{ width:28px;height:28px}
   .cc__qr-img{ width: 160px; height: 160px; margin: 0 auto;}
   .cc__qr-hint{ text-align: center; align-items: center; width:100%;}
   .contact__cta-row{ flex-direction: column; align-items: flex-start; padding: 24px;}
-  .schools-grid{ grid-template-columns: repeat(4, 1fr); }
+  .mentors-grid{ grid-template-columns: repeat(2, 1fr); gap: 16px;}
   .lang{ display:none }
   .footer__grid{ grid-template-columns: 1fr 1fr; gap: 30px}
   .footer__bar{ flex-direction:column; gap:8px; text-align:center}
@@ -1030,8 +1037,8 @@ svg.sc{ width:28px;height:28px}
   .stats__grid{ grid-template-columns: 1fr 1fr}
   .stat:nth-child(odd){ border-right:0 }
   .steps{ grid-template-columns: 1fr }
-  .schools-grid{ grid-template-columns: repeat(3, 1fr); }
-  .school__mono{ width: 48px; height: 48px; font-size: 1.2rem}
+  .mentors-grid{ grid-template-columns: 1fr; gap: 14px;}
+  .mentor__ava{ width: 80px; height: 80px;}
   .faculty__strip{ grid-template-columns: 1fr }
   .footer__grid{ grid-template-columns: 1fr }
   .h2{ font-size: 2rem }
